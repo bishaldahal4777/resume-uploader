@@ -4,4 +4,4 @@ from .models import Resume
 
 @admin.register(Resume)
 class ResumeModelAdmin(admin.ModelAdmin):
-    list_display =['id','name','dob','gender','mobile']
+    list_display =['id','name','dob','gender','mobile','locality','city','job_city','email','profile_image']
