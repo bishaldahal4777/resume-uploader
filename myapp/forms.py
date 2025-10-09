@@ -36,6 +36,4 @@ class ResumeForm(forms.ModelForm):
             'mobile':forms.NumberInput(attrs={'class':'form-control'}),
             'email':forms.EmailInput(attrs={'class':'form-control'}),
 
-
-
         }
