@@ -28,7 +28,7 @@ class ResumeForm(forms.ModelForm):
         labels = {'name':'Full Name', 'dob':'Date of Birth', 'pin':'Pin Code', 'mobile': 'Contact Number', 'email':'Email Address','profile_image':'Profile Image','my_file':'Document'}
         widgets={
             'name':forms.TextInput(attrs={'class':'form-control'}),
-            'dob':forms.DateInput(attrs={'class':'form-control'}),
+            'dob':forms.DateInput(attrs={'class':'form-control', 'id':'datepicker'}),
             'locality':forms.TextInput(attrs={'class':'form-control'}),
             'city':forms.TextInput(attrs={'class':'form-control'}),
             'pin':forms.NumberInput(attrs={'class':'form-control'}),

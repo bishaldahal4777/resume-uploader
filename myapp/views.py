@@ -10,6 +10,7 @@ class HomeView(View):
         form = ResumeForm()
         return render(request, "myapp/home.html", {'form':form})
     
+    
     def post(self, request):
         form = ResumeForm(request.POST, request.FILES)
         if form.is_valid():
